@@ -2,13 +2,15 @@ name = input("Hi! What was your name again? Since it's been so long we had a shi
 
 havingkids = ['yes','Yes!','I do','yup','duh','yeah']
 nothavingkids = ['nah','tf no','NO!?','ew, no','no?','no','No','NO']
+creator = ['Allex']
 
 def check_name(name):
-    age = input("Damn, how old are you now? ")
-    if name == 'Allex':
+    if name in creator:
         print("What...no you... you can't be me...")
     else:
         check_age(age)
+
+age = input("Damn, how old are you now? ")
 
 def check_age(age):
     if age.isdigit():
@@ -37,3 +39,4 @@ def check_kids(kids):
         print("I guess you didn't answer properly.")
 
 check_name(name)
+
